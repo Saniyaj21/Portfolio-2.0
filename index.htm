@@ -17,6 +17,20 @@
 </head>
 
 <body>
+
+    <div class="pop-up-box" id="popupDiv">
+        <div class="pop-up">
+        <p class="pop-p primary">Visit latest version.</p>
+        <a href="https://saniyajmallik.vercel.app/"><button class="pop-btn pop-primary primary">Visit Now</button></a>
+        <div class="or-line">
+           <button class="or-btn-line"></button><button class="or-btn">OR</button><button class="or-btn-line"></button>
+        </div>
+        <p class="pop-p secondary">Continue with previous version.</p>
+        <button id="hidePopupButton" class="pop-btn pop-secondary secondary">Stay Here</button>
+        </div>
+    </div>
+
+    
     <div class="left show" id="left">
         <!-- Profile section -->
         <div class="profile">
@@ -263,7 +277,7 @@
                 <footer>
                     <a href="https://www.facebook.com/saniyaj.mallik.7" target="_blank"><Img
                             src="media/square-facebook.svg"></Img></a>
-                    <a href="https://www.instagram.com/saniyajmallik12/" target="_blank"> <Img
+                    <a href="https://www.instagram.com/saniyajmallik/" target="_blank"> <Img
                             src="media/square-instagram.svg"></Img></a>
                     <a href="https://www.linkedin.com/in/saniyaj-mallik-27809923a" target="_blank"><Img
                             src="media/linkedin.svg"></Img></a>
@@ -276,6 +290,19 @@
 
 
     <script>
+
+
+function hidePopup() {
+    var popupDiv = document.getElementById("popupDiv");
+    popupDiv.style.display = "none";
+  }
+
+  var hidePopupButton = document.getElementById("hidePopupButton");
+  hidePopupButton.addEventListener("click", hidePopup);
+
+
+
+
         function showmenu() {
             let left = document.getElementById('left');
             let ham = document.getElementById('favicon');
